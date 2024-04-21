@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carto>
+  <markers>
+    <marker name="FRENDA"  lat="35.0794074" lng="1.069627" open="1" bonus="0"/>
+    <marker name="TASSAMEURT"  lat="36.2580277" lng="4.8243593" open="1" bonus="0"/>
+    <marker name="BENI-SNOUS"  lat="34.6246281" lng="-1.5551957" open="1" bonus="0"/>
+    <marker name="EL-OUED"  lat="33.215441" lng="7.1553214" open="1" bonus="0"/>
+     <marker name="ANNABA"  lat="36.8982165" lng="7.7549272" open="1" bonus="0"/>
+    <marker name="OUARGLA"  lat="30.9980145" lng="6.7664536" open="1" bonus="0"/>
+    <marker name="MOSTAGANEM"  lat="35.93333435058594" lng="0.09027779847383499" open="1" bonus="0"/>
+    <marker name="MISSERGHINE"  lat="35.6093146" lng="-0.7333115" open="1" bonus="0"/>
+    <marker name="ADRAR"  lat="26.4888155" lng="-1.3582442" open="1" bonus="0"/>
+     <marker name="TEBESSA"  lat="35.4" lng="8.116667" open="1" bonus="0"/>
+    <marker name="ORAN"  lat="35.6976541" lng="-0.6337376" open="1" bonus="0"/>
+    <marker name="GHAZAOUET"  lat="35.0962252" lng="-1.8562218" open="1" bonus="0"/>
+    <marker name="TLEMCEN"  lat="34.8884062" lng="-1.3180042" open="1" bonus="0"/>
+    <marker name="OULED DJELLAL"  lat="34.430385" lng="5.061176" open="1" bonus="0"/>
+    <marker name="SETIF"  lat="36.1969027" lng="5.4150871" open="1" bonus="0"/>
+    <marker name="PORTSAY"  lat="35.083824" lng="-2.197410" open="1" bonus="0"/>
+    
+    
+  </markers>
+  
+</carto>

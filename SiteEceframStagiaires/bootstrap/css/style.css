@@ -1,0 +1,79 @@
+#map {
+        height: 200%;
+      }
+      
+.espace {
+  border-spacing : 5px 10px;
+  border-collapse : separate ;
+}
+
+
+table {
+    border-width: 3px;
+ 
+    border-style : solid ;
+   
+
+    border-radius: 5%;
+   
+    
+}
+
+div.alerte {
+    
+  color : red ;
+    
+}
+
+div.jumbotron#contact{
+    
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    
+
+   
+  
+}
+
+
+.modal{
+  display: block;
+  position: relative;
+
+  
+  
+}
+
+
+.montexte{
+    
+    color:blue; 
+    
+}
+
+
+#Postit{
+
+  padding: 2%;
+  background-color: #ffffa5;
+  box-shadow: 2px 4px 6px #444;
+  -moz-box-shadow: 2px 4px 6px #444;
+  -webkit-box-shadow: 2px 4px 6px #444;
+  transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  border-bottom-right-radius: 60px 10px;
+
+}
+
+/*
+div#form {
+
+	margin: auto;
+	width:730px;
+
+}
+*/
+
