@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    color: #43485c;
+    color: #000;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
@@ -84,6 +84,11 @@ img {
     border: none;
     max-width: 100%;
     height: auto;
+}
+
+.styled-list {
+    list-style-type: disc;
+    /* Utilisation de puces rondes */
 }
 
 ul {
@@ -361,6 +366,13 @@ nav.navbar.bootsnav .navbar-toggle i {
     line-height: 1.8;
 }
 
+.single-about-txt h1 {
+    font-size: 22px;
+    color: #000;
+    text-transform: initial;
+    line-height: 1.8;
+}
+
 .single-about-txt p {
     font-size: 16px;
     color: #999fb3;
@@ -374,6 +386,12 @@ nav.navbar.bootsnav .navbar-toggle i {
 
 .single-about-add-info h3 {
     color: #636a82;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.single-about-add-info h1 {
+    color: #000;
     font-size: 16px;
     text-transform: capitalize;
 }

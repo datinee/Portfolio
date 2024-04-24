@@ -55,44 +55,29 @@
 
 </head>
 <style>
-    main {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
+    .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .card {
+        flex: 0 0 calc(30% - 20px);
+        /* Pour que les cartes prennent environ 30% de la largeur, en tenant compte de l'espace entre elles */
+        margin-bottom: 20px;
+        /* Marge en bas pour l'espace entre les lignes */
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
         padding: 20px;
-        width: calc(50% - 20px);
-        /* Utilisation de calc pour calculer la largeur de chaque carte avec une marge de 20px */
         box-sizing: border-box;
     }
 
-    h1,
-    h2,
-    h3 {
-        color: #333;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        margin-bottom: 5px;
-    }
-
-    a {
-        color: #007bff;
-        text-decoration: none;
+    @media (max-width: 768px) {
+        .card {
+            flex-basis: calc(50% - 20px);
+            /* Pour deux cartes par ligne sur les petits écrans */
+        }
     }
 </style>
 
@@ -124,7 +109,6 @@
                             <li class=" smooth-menu active"></li>
                             <li class="smooth-menu"><a href="#about">à propos</a></li>
                             <li class="smooth-menu"><a href="#skills">compétences</a></li>
-                            <li class="smooth-menu"><a href="#profiles">outils / logiciels</a></li>
                             <li class="smooth-menu"><a href="#portfolio">projets</a></li>
                             <li class="smooth-menu"><a href="#veille">veille technologique</a></li>
                             <li class="smooth-menu"><a href="#contact">contact</a></li>
@@ -145,7 +129,7 @@
     <br>
     <br>
     <br>
-    <section id="veille" class="veille">
+    <section id="about" class="about">
         <div class="section-heading text-center">
             <h2>Veille Technologique :
                 <br>
@@ -153,214 +137,244 @@
                 Progrès dans les Langages de Programmation
             </h2>
         </div>
-
         <div class="container">
-            <section>
-                <br>
-                <h2>Sujet de ma veille :</h2>
-                <br>
-                <p>Les langages de programmation sont les outils essentiels que
-                    les développeurs
-                    utilisent pour créer des logiciels, des applications web, mobiles et bien
-                    plus encore. Ils évoluent
-                    constamment pour répondre aux besoins changeants des développeurs et des
-                    entreprises.</p>
-                <p>Comprendre les dernières avancées dans les langages de programmation est
-                    crucial pour rester
-                    compétitif sur le marché du travail et pour développer des solutions
-                    logicielles efficaces et
-                    innovantes. Nous allons explorer les nouveaux langages émergents, les mises
-                    à jour majeures des
-                    langages existants, les frameworks et bibliothèques populaires, ainsi que
-                    les tendances émergentes
-                    dans ce domaine.</p>
-            </section>
-            <main>
-                <div class="card">
-                    <section>
-                        <h2>Nouveaux Langages de Programmation</h2>
-                        <p>En 2022 et au-delà, nous avons vu l'émergence de plusieurs nouveaux langages
-                            de programmation
-                            prometteurs :</p>
-                        <ul>
-                            <li><strong>Dart :</strong> Développé par Google, Dart est de plus en plus
-                                utilisé pour le
-                                développement d'applications web et mobiles, notamment avec le framework
-                                Flutter. Il offre une
-                                performance élevée et un typage statique optionnel.</li>
-                            <li><strong>Rust :</strong> Rust gagne en popularité en raison de sa
-                                sécurité et de ses performances
-                                élevées, en particulier pour les applications système et les logiciels
-                                nécessitant une haute
-                                fiabilité. Il est apprécié pour sa gestion sûre de la mémoire et sa
-                                prévention des erreurs de
-                                segmentation.</li>
-                            <li><strong>TypeScript :</strong> TypeScript, une extension typée de
-                                JavaScript, est de plus en plus
-                                adopté pour ses fonctionnalités de typage statique qui améliorent la
-                                robustesse des grands
-                                projets JavaScript. Il offre une meilleure maintenance du code et une
-                                détection précoce des
-                                erreurs.</li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="card">
-                    <section>
-                        <h2>Mises à Jour Majeures des Langages Existants</h2>
-                        <p>Les langages de programmation existants continuent également d'évoluer avec
-                            des mises à jour majeures
-                            :</p>
-                        <ul>
-                            <li><strong>Python 3.10 :</strong> La dernière version de Python introduit
-                                de nouvelles
-                                fonctionnalités telles que les paramètres de type pour les fonctions,
-                                ainsi que des
-                                améliorations de performance et de syntaxe. Python reste l'un des
-                                langages les plus populaires
-                                pour son large éventail d'applications, de la science des données au
-                                développement web.</li>
-                            <li><strong>Java 17 :</strong> Java continue d'évoluer avec des
-                                améliorations de performance, de
-                                sécurité et de fonctionnalités, ainsi qu'un support étendu pour les
-                                architectures matérielles
-                                modernes. Il reste un choix privilégié pour le développement
-                                d'applications d'entreprise et
-                                mobiles à grande échelle.</li>
-                            <li><strong>C++20 :</strong> La norme C++20 apporte de nombreuses nouvelles
-                                fonctionnalités, y
-                                compris des améliorations de la syntaxe, de la concurrence et de la
-                                gestion de la mémoire. C++
-                                reste un langage populaire pour le développement de logiciels système,
-                                de jeux et d'applications
-                                nécessitant des performances optimisées.</li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="card">
-                    <section>
-                        <h2>Frameworks et Bibliothèques Populaires</h2>
-                        <p>En plus des langages eux-mêmes, les frameworks et les bibliothèques jouent un
-                            rôle crucial dans le
-                            développement logiciel. Voici quelques-uns des plus populaires :</p>
-                        <ul>
-                            <li><strong>React.js :</strong> React.js reste un choix dominant pour le
-                                développement d'interfaces
-                                utilisateur web dynamiques, offrant des performances élevées et une
-                                architecture composante. Il
-                                est largement utilisé par des entreprises telles que Facebook, Instagram
-                                et Airbnb.</li>
-                            <li><strong>Vue.js :</strong> Vue.js gagne en popularité pour sa simplicité
-                                et sa flexibilité, en
-                                permettant le développement d'applications web interactives de manière
-                                efficace. Il est apprécié
-                                pour sa courbe d'apprentissage douce et sa documentation claire.</li>
-                            <li><strong>TensorFlow :</strong> TensorFlow est largement utilisé pour le
-                                développement de modèles
-                                d'apprentissage automatique et d'intelligence artificielle, offrant une
-                                grande flexibilité et
-                                des performances optimisées. Il est utilisé par des entreprises telles
-                                que Google, Uber et
-                                Airbnb pour des applications de vision par ordinateur, de traitement du
-                                langage naturel et plus
-                                encore.</li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="card">
-                    <section>
-                        <h2>Langages Émergents</h2>
-                        <p>Outre les langages bien établis, de nouveaux langages émergents attirent
-                            également l'attention des
-                            développeurs :</p>
-                        <ul>
-                            <li><strong>Go :</strong> Connu pour sa simplicité, sa concurrence native et
-                                ses performances
-                                élevées, Go est de plus en plus utilisé pour le développement
-                                d'applications système et web. Il
-                                est apprécié pour sa compilation rapide et sa gestion efficace des
-                                goroutines.</li>
-                            <li><strong>Kotlin :</strong> Kotlin est devenu le langage de programmation
-                                préféré pour le
-                                développement d'applications Android, offrant une syntaxe concise et des
-                                fonctionnalités
-                                modernes. Il est apprécié pour son interopérabilité avec Java et son
-                                support par Google pour le
-                                développement d'applications Android.</li>
-                            <li><strong>Swift :</strong> Développé par Apple, Swift est utilisé pour le
-                                développement
-                                d'applications iOS et macOS, offrant une sécurité élevée et des
-                                performances optimisées. Il est
-                                apprécié pour sa syntaxe expressive et sa gestion sûre de la mémoire.
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="card">
-                    <section>
-                        <h2>Sources Utilisées</h2>
-                        <p>Les sources suivantes ont été utilisées pour recueillir des informations
-                            fiables et à jour sur les
-                            progrès dans les langages de programmation :</p>
-                        <ul>
-                            <li><strong>TechCrunch :</strong> TechCrunch est une publication en ligne
-                                réputée qui couvre les
-                                actualités technologiques et les tendances émergentes dans l'industrie.
-                                Les articles de
-                                TechCrunch fournissent des analyses approfondies et des informations sur
-                                les dernières avancées
-                                dans les langages de programmation.</li>
-                            <li><strong>GitHub Blog :</strong> Le blog de GitHub est une ressource
-                                précieuse pour les
-                                développeurs, offrant des mises à jour sur les fonctionnalités de la
-                                plateforme GitHub, ainsi
-                                que des articles sur les tendances et les bonnes pratiques en matière de
-                                développement logiciel.
-                            </li>
-                            <li><strong>Stack Overflow Developer Survey :</strong> L'enquête Stack
-                                Overflow Developer Survey est
-                                une source de données importante qui offre des insights sur les
-                                préférences, les tendances et
-                                les pratiques des développeurs du monde entier. Les résultats de cette
-                                enquête sont souvent
-                                utilisés pour comprendre l'évolution des langages de programmation et
-                                des outils de
-                                développement.</li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="card">
-                    <section>
-                        <h2>Applications Utilisées</h2>
-                        <p>Les applications suivantes ont été utilisées pour rester informé des
-                            dernières nouvelles et des
-                            discussions pertinentes sur les langages de programmation :</p>
-                        <ul>
-                            <li><strong>GitHub :</strong> GitHub est une plateforme de développement
-                                collaborative largement
-                                utilisée par la communauté des développeurs pour partager du code,
-                                contribuer à des projets open
-                                source et suivre les dernières tendances en matière de développement
-                                logiciel.</li>
-                            <li><strong>Techmeme :</strong> Techmeme est une source d'actualités
-                                technologiques qui agrège les
-                                meilleurs articles des principales publications technologiques. En
-                                consultant Techmeme, j'ai pu
-                                rester informé des dernières nouvelles et analyses sur les langages de
-                                programmation.</li>
-                            <li><strong>Reddit r/programming :</strong> Le subreddit r/programming sur
-                                Reddit est une communauté
-                                en ligne dynamique où les développeurs partagent des actualités, des
-                                articles et des discussions
-                                sur la programmation et le développement logiciel. C'est un excellent
-                                endroit pour découvrir de
-                                nouveaux langages, frameworks et tendances.</li>
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-sm-13">
+                        <div class="single-about-txt"> <br>
+                            <h1>Qu'est-ce que la veille technologique ?</h1>
+                            <br>
+                            <h3>
+                                La veille technologique, élément de la veille stratégique, consiste à surveiller les
+                                évolutions techniques, les innovations dans un secteur d’activité donnée. La veille
+                                technologique comprend notamment la surveillance, la collecte, le partage et la
+                                diffusion d’information permettant d’anticiper ou de s’informer sur des changements en
+                                matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux,
+                                processus, concepts, innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact
+                                sur l’environnement et l’organisation.</h3>
+                            <br>
+                            <h1>Les principaux outils de ma veille :
+                            </h1>
+                            <br>
+                            <h3>
+                                J'ai effectuer ma veille technologique grace aux newsletters tel que Feedly un
+                                agrégateur de flux RSS. et des sites
+                                permettant de me tenir au courant des derniéres actualités tel que Le Monde Informatique
+                                qui est un
+                                site internet regroupant l’actualité High Tech et Geek, ou encore GitHub Blog, SDTimes
+                                et
+                                Stack Overflow Developer.
 
-                        </ul>
-                    </section>
+
+                            </h3>
+                            <br>
+                            <h1>Sujet de ma veille :</h1>
+                            <br>
+                            <h3>Les langages de programmation sont les outils essentiels que
+                                les développeurs
+                                utilisent pour créer des logiciels, des applications web, mobiles et bien
+                                plus encore. Ils évoluent
+                                constamment pour répondre aux besoins changeants des développeurs et des
+                                entreprises.
+                                <br>
+                                Comprendre les dernières avancées dans les langages de programmation est
+                                crucial pour rester
+                                compétitif sur le marché du travail et pour développer des solutions
+                                logicielles efficaces et
+                                innovantes. Nous allons explorer les nouveaux langages émergents, les mises
+                                à jour majeures des
+                                langages existants, les frameworks et bibliothèques populaires, ainsi que
+                                les tendances émergentes
+                                dans ce domaine.
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-            </main>
+            </div>
         </div>
+
+    </section>
+
+    </main>
+
+
+    <section id="about" class="about">
+        <div class="section-heading text-center">
+            <h2>Langages Émergents
+            </h2>
+        </div>
+
+    </section>
+    <main class="card-container">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Go :</h4>
+                <br>
+                <p class="card-text">Origine et Création : Le langage Go, également appelé Golang, a été développé par
+                    Google et annoncé en 2009. Il a été créé par Robert Griesemer, Rob Pike et Ken Thompson. <br>
+
+                    Simplicité et Efficacité : Go a été conçu avec l'objectif de combiner la simplicité et l'efficacité.
+                    <br>
+
+                    Performance : Go offre de bonnes performances, notamment en raison de sa compilation rapide et de sa
+                    gestion efficace de la mémoire. <br>
+
+                    Typage Statique : Go est un langage à typage statique, ce qui signifie que les types des variables
+                    sont vérifiés à la compilation. <br>
+
+                    Écosystème : Go bénéficie d'un écosystème solide avec un grand nombre de bibliothèques et de
+                    frameworks open source disponibles.
+                    <br>
+                    <a href="https://www.lemondeinformatique.fr/actualites/lire-le-langage-go-une-alternative-credible-a-python-pour-l-ia-93476.html
+                    "><button class="button">SOURCE : Le Monde Informatique</button></a>
+                </p>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Kotlin :</h4>
+                <br>
+                <p class="card-text">Origine et Création : Kotlin est un langage de programmation développé par
+                    JetBrains. Il a été annoncé en 2011 et sa première version stable a été publiée en
+                    2016.<br>
+                    Interopérabilité avec Java : Kotlin est conçu pour être pleinement compatible avec Java.
+                    <br>
+                    Simplicité et Expressivité : Kotlin vise à être simple, concis et expressif.
+                    <br>
+                    Préférence d'Android : Kotlin est devenu le langage de programmation préféré pour le développement
+                    d'applications Android.
+                    <br>
+                    <br>
+                </p>
+                <a href="https://www.linkedin.com/pulse/future-kotlin-2024-beyond-spiralmantra-qa6fc/?trackingId=zlJnO2uo9Gep98QEk%2BZ6UQ%3D%3D
+                    "><button class="button">SOURCE : Linkedin</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">TypeScript :</h4>
+                <br>
+                <p class="card-text">Origine et Création : TypeScript est un langage de programmation développé et
+                    maintenu par Microsoft. Il a été annoncé pour la première fois en 2012 et sa première version stable
+                    a été publiée en 2014.
+                    <br>
+                    Extension de JavaScript : TypeScript est une extension typée de JavaScript, ce qui signifie qu'il
+                    ajoute des fonctionnalités de typage statique à JavaScript tout en restant compatible avec le code
+                    JavaScript existant.
+                    <br>
+                    Typage Statique : TypeScript introduit des fonctionnalités de typage statique telles que les
+                    annotations de type, les interfaces et les classes abstraites.
+                    <br>
+                    Orienté Objet : TypeScript prend en charge la programmation orientée objet avec des concepts tels
+                    que les classes, les interfaces et l'héritage.
+                    <br>
+                    <a href="https://sdtimes.com/angular/typescript-getting-attention-enterprise/"><button
+                            class="button">SOURCE
+                            : SDTimes</button></a>
+            </div>
+        </div>
+
+    </main>
+    <section id="about" class="about">
+        <div class="section-heading text-center">
+            <h2>Mises à Jour Majeures des Langages Existants
+
+            </h2>
+        </div>
+    </section>
+    <main class="card-container">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Python 3.10 :</h4>
+                <br>
+                <p class="card-text">La dernière version de Python introduit
+                    de nouvelles
+                    fonctionnalités telles que les paramètres de type pour les fonctions,
+                    ainsi que des
+                    améliorations de performance et de syntaxe. Python reste l'un des
+                    langages les plus populaires
+                    pour son large éventail d'applications, de la science des données au
+                    développement web.</p>
+                <br>
+                <a href="https://www.lemondeinformatique.fr/actualites/lire-le-langage-go-une-alternative-credible-a-python-pour-l-ia-93476.html
+                    "><button class="button">SOURCE : Le Monde Informatique</button></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Java 17 :</h4>
+                <br>
+                <p class="card-text">Java continue d'évoluer avec des
+                    améliorations de performance, de
+                    sécurité et de fonctionnalités, ainsi qu'un support étendu pour les
+                    architectures matérielles
+                    modernes. Il reste un choix privilégié pour le développement
+                    d'applications d'entreprise et
+                    mobiles à grande échelle.</p>
+                <br>
+                <a href="https://sdtimes.com/java/java-17-released-with-updates-to-lts-schedule/"><button
+                        class="button">SOURCE
+                        : SDTimes</button></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">C++20 :</h4>
+                <p class="card-text">La norme C++20 apporte de nombreuses nouvelles
+                    fonctionnalités, y
+                    compris des améliorations de la syntaxe, de la concurrence et de la
+                    gestion de la mémoire. C++
+                    reste un langage populaire pour le développement de logiciels système,
+                    de jeux et d'applications
+                    nécessitant des performances optimisées.</p>
+            </div>
+            <br>
+            <a href="https://sdtimes.com/softwaredev/c20-is-completed/"><button class="button">SOURCE
+                    : SDTimes</button></a>
+        </div>
+    </main>
+    <section id="about" class="about">
+        <div class="section-heading text-center">
+            <h2>Stack Overflow Developer Survey
+            </h2>
+        </div>
+    </section>
+    <div class="container">
+        <div class="about-content">
+            <div class="row">
+                <div class="col-sm-13">
+                    <div class="single-about-txt">
+                        <h1>Les Bases de données les plus populaire en 2023</h1>
+                        <br>
+                        <br>
+                        <img src="assets/images/portfolio/base.png">
+                        <br>
+                        <br>
+                        <h1>Les Langages de Programmation les plus populaires en 2023</h1>
+                        <br>
+                        <br>
+                        <img src="assets/images/portfolio/langage.png">
+                        <br>
+                        <br>
+                        <h1>Les Frameworks et Bibliothèques les plus populaires en 2023</h1>
+                        <br>
+                        <br>
+                        <img src="assets/images/portfolio/framwork.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <center>
+
+        <a href="javascript:history.back()"><button class="button" style="border-color: #b636ff;">Retour</button></a>
+    </center>
     </section>
 
 </body>
